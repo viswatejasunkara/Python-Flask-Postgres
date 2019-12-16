@@ -7,8 +7,8 @@ postgres
 port:5432
 https://suhas.org/sqlalchemy-tutorial/
 
-pip install --proxy http://sunka502:Messi%4054321%40@ccaintra.kpnnl.local:8080 flask-sqlalchemy
-pip install --proxy http://sunka502:Messi%4054321%40@ccaintra.kpnnl.local:8080 flask-wtf,psycopg2
+pip install --proxy http://user:password@host:port flask-sqlalchemy
+pip install --proxy user:password@host:port flask-wtf,psycopg2
 flask run
 
 
