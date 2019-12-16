@@ -1,12 +1,17 @@
 python -m venv venv	creates vitual environment inside project folder
 venv\Scripts\activate	activates virtual environment
 
+install postgres in the system and host it.
+access the DB in web browser after hosted
+
 DB- Postgre sql
-postgres
-475951
-port:5432
+user:postgres
+password:475951
+port:5432   (default)
 https://suhas.org/sqlalchemy-tutorial/
 
+
+PIP install for enterprise servers to connect via proxy server
 pip install --proxy http://user:password@host:port flask-sqlalchemy
 pip install --proxy user:password@host:port flask-wtf,psycopg2
 flask run
