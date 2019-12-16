@@ -1,0 +1,18 @@
+python -m venv venv	creates vitual environment inside project folder
+venv\Scripts\activate	activates virtual environment
+
+DB- Postgre sql
+postgres
+475951
+port:5432
+https://suhas.org/sqlalchemy-tutorial/
+
+pip install --proxy http://sunka502:Messi%4054321%40@ccaintra.kpnnl.local:8080 flask-sqlalchemy
+pip install --proxy http://sunka502:Messi%4054321%40@ccaintra.kpnnl.local:8080 flask-wtf,psycopg2
+flask run
+
+
+COPY from excel to postgresql
+------------------------------
+COPY private.employees(empid,empname,dateofbirth) FROM 'C:\temp\birthday.csv' DELIMITER ';' CSV HEADER;
+CSV FILE with 3 columns and date in the format yyyy-mm-dd

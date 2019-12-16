@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="refresh" content="5;url=http://localhost:5000/page3" />
+</head>
+<body bgcolor="green">
+<center><h1>Tech Mahindra LTD</h1></center>
+ <center><h1>Hello <b style="color:white">KPN</b> TechMighties !!!</h1></center>
+    <center>
+    {% for employees in emp%}
+        <h4>Happy Birthday </h4> <h4 style="color:orange">{{employees.empname}}</h4>
+        <h4>Date Of Birth: <b style="color:blue">{{employees.dateofbirth}}</b> </h4>
+        <h4>Age : <b style="color:white">{{ (currentyear - employees.dateofbirth.year) }} </b></h4>
+    {% endfor %}
+    </center>
+<center><img src="/static/page2.jpg" style ="width:200px;height:200px"></center>
+</body>
+</html>

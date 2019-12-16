@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee Details</title>
+</head>
+  <style>
+  body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
+.box{
+  width: 700px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+  color: red;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "dateofbirth"],.box input[type = "empid"],.box input[type = "empname"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 12px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+
+
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+</style>
+
+<body bgcolor="F3EC1A">
+<script>
+    function alertfunc(){
+    alert("employee added"
+    }
+</script>
+
+<form class= "box" action="/addempnew" method="POST">
+
+<h1> Enter the details of new Employee </h1><br>
+<font face="verdana" size="4" color="white">Enter the employee id no to add
+<input type="empid" name="empid" placeholder="Employee  id">
+Enter the employee name to add
+<input type="empname" name="empname" placeholder="Employee name">
+Enter the employee date of birth
+<input type="dateofbirth" name="dateofbirth" placeholder="YYYY-MM-DD"></font>
+<input onclick="alertfunc()" type="submit" value="Add">
+
+<center><button onclick="window.location.href = 'http://127.0.0.1:5000/';">HOME PAGE</button></center>
+</form>
+<br>
+
+
+
+</body>
+</html>

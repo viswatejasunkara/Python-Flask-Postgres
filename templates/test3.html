@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta http-equiv="refresh" content="10;url=http://localhost:5000/page1"/>
+</head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+   height: 50px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+th {
+  background-color: #cccc99;
+  color: white;
+}
+</style>
+
+<body>
+<center><h1>KPN wishes u a happy b day</h1></center>
+
+<center>
+<table style="width:60%">
+    <caption><h1>Happy Birthday</h1></caption>
+  <tr>
+    <th>EMPID</th>
+    <th>EMPNAME</th>
+    <th>MESSAGE</th>
+  </tr>
+    {% for employees in emp%}
+  <tr>
+    <td width="20%">{{employees.empid}}</td>
+    <td width="40%">{{employees.empname}}</td>
+    <td width="40%">Happy {{(currentyear - employees.dateofbirth.year)}} th Birthday {{employees.empname}} </b></h1>
+  </tr>
+    {% endfor %}
+</table>
+</center>
+
+<center><img src="/static/page3.jpg" style ="width:200px;height:200px"></center>
+
+</body>
+</html>
